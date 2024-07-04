@@ -1,0 +1,2 @@
+# cute Fortune teller card
+ 
