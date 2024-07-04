@@ -1,0 +1,73 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f3e7e9 0%, #e3eeff 100%);
+  }
+
+  .cuteCard {
+    background: #fff;
+    border: 2px solid #24e4fd;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+    transition: transform 0.3s;
+  }
+
+  .cuteCard:hover {
+    transform: scale(1.05);
+  }
+
+  .cuteTitle {
+    font-size: 26px;
+    color: #ff69b4;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .cuteFortune {
+    font-size: 18px;
+    color: #555;
+    margin: 20px 0;
+    min-height: 40px;
+  }
+
+  .cuteButton {
+    background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+
+  .cuteButton:hover {
+    background: linear-gradient(135deg, #ff1493 0%, #ff69b4 100%);
+  }
+
+  .confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(45deg, #ff69b4, #ff1493);
+    opacity: 0;
+    animation: confetti 2s ease-out forwards;
+  }
+
+  @keyframes confetti {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) rotate(720deg);
+      opacity: 0;
+    }
+  }
